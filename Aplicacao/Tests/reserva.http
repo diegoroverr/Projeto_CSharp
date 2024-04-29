@@ -1,0 +1,22 @@
+@base_url =  https://localhost:7113/aplicacao/reserva
+
+### LISTAR RESERVAS ###
+
+GET {{base_url}}/listar
+
+### CADASTRAR RESERVA ###
+
+POST {{base_url}}/cadastrar
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "Quarto": 215,
+    "DataEntrada": "10/08/2024",
+    "DataSaida": "20/08/2024",
+    "NumeroReserva": 10250
+}
+
+### ATUALIZAR RESERVA ###
+
+PATCH {{base_url}}/alterar/1

@@ -1,0 +1,22 @@
+@base_url =  https://localhost:7113/aplicacao/hospede
+
+### LISTAR HOSPEDES ###
+
+GET {{base_url}}/listar
+
+### CADASTRAR HOSPEDE ###
+
+POST {{base_url}}/cadastrar
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "Nome": "Pedro da Silva",
+    "Email": "pedro@gmail.com",
+    "JaPagou": true,
+    "ReservaId": "1" 
+}
+
+### ATUALIZAR HOSPEDE ###
+
+PATCH {{base_url}}/alterar/1

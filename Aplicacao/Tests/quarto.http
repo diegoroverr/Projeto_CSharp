@@ -1,0 +1,17 @@
+@base_url = https://localhost:7113/aplicacao/quarto
+
+### LISTAR QUARTOS ###
+GET {{base_url}}/listar
+
+### CADASTRAR QUARTO ###
+POST {{base_url}}/cadastrar
+Content-Type: application/json
+
+{
+    "Numero": 215,
+    "EstaDisponivel": true
+}
+
+### ATUALIZAR QUARTO ###
+
+PATCH {{base_url}}/alterar/1
